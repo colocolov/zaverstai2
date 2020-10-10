@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Заверстай</title>
+    <title>Блог Анны</title>
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -29,7 +29,9 @@
         <div class="article_header">
           <h2 class="title">Все статьи</h2>
           <select name="theme" id="theme" class="chose">
-            <option value="0" class="chose-item">Выбрать тему</option>
+            <option selected hidden value="#" class="chose-item">
+              Выбрать тему
+            </option>
             <option value="trip" class="chose-item">путешествие</option>
             <option value="city" class="chose-item">город</option>
             <option value="books" class="chose-item">книги</option>
@@ -40,7 +42,7 @@
         </div>
         <!-- /.article_header -->
         <div class="article_grid3">
-          <article class="view_mini">
+          <article class="view_mini" data-category="trip">
             <a href="article.html"
               ><img
                 src="files/article_1.jpg"
@@ -59,7 +61,7 @@
             </div>
           </article>
           <!-- /.view_mini -->
-          <article class="view_mini">
+          <article class="view_mini" data-category="city">
             <a href="article.html"
               ><img
                 src="files/article_2.jpg"
@@ -78,7 +80,7 @@
             </div>
           </article>
           <!-- /.view_mini -->
-          <article class="view_mini">
+          <article class="view_mini" data-category="books">
             <a href="article.html"
               ><img
                 src="files/article_3.jpg"
@@ -100,7 +102,7 @@
         </div>
         <!-- /.article_grid3 -->
         <div class="article_grid2">
-          <article class="view_big">
+          <article class="view_mini view_big" data-category="photos">
             <img
               src="files/article_4.jpg"
               alt="фотография цветов"
@@ -115,14 +117,14 @@
                 снимков.
               </div>
               <div class="article_info color">
-                <div class="article_tag">Теги: путешествия</div>
+                <div class="article_tag">Теги: фотографии</div>
                 <div class="article_date">29.09.2020</div>
               </div>
             </div>
           </article>
           <!-- /.view_mini -->
 
-          <article class="view_big">
+          <article class="view_mini view_big" data-category="recipes">
             <img src="files/article_5.jpg" alt="чизкейк" class="view_img_big" />
             <div class="description">
               <a href="article.html"
@@ -277,6 +279,7 @@
       </div>
     </footer>
 
+    <script src="js/filter.js"></script>
     <script src="js/length-com-index.js"></script>
   </body>
 </html>
