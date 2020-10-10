@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Заверстай</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/bg_header.jpg" alt="шапка сайта" class="header_img" />
+      <div class="container">
+        <div class="header-content">
+          <img src="img/logo.svg" alt="логотип" class="logo" />
+          <div class="menu">
+            <a href="#articles" class="header-link">Статьи</a>
+            <a href="#about-me" class="header-link">Обо мне</a>
+            <a href="#portfolio" class="header-link">Портфолио</a>
+            <a href="#contact" class="header-link">Написать мне</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="articles" id="articles">
+      <div class="container">
+        <div class="article_header">
+          <h2 class="title">Все статьи</h2>
+          <select name="theme" id="theme" class="chose">
+            <option value="0" class="chose-item">Выбрать тему</option>
+            <option value="trip" class="chose-item">путешествие</option>
+            <option value="city" class="chose-item">город</option>
+            <option value="books" class="chose-item">книги</option>
+            <option value="photos" class="chose-item">фотографии</option>
+            <option value="recipes" class="chose-item">рецепты</option>
+            <option value="all" class="chose-item">все статьи</option>
+          </select>
+        </div>
+        <!-- /.article_header -->
+        <div class="article_grid3">
+          <article class="view_mini">
+            <a href="article.html"
+              ><img
+                src="files/article_1.jpg"
+                alt="берлин"
+                class="view_mini_img"
+              />
+              <h3 class="article_title">Путешествие в Берлин в августе</h3></a
+            >
+            <div class="article_descr">
+              Летний месяц я провела в столице Германии вместе с друзьями. И вот
+              как это было!
+            </div>
+            <div class="article_info">
+              <div class="article_tag">Теги: путешествия</div>
+              <div class="article_date">29.09.2020</div>
+            </div>
+          </article>
+          <!-- /.view_mini -->
+          <article class="view_mini">
+            <a href="article.html"
+              ><img
+                src="files/article_2.jpg"
+                alt="колдбрю"
+                class="view_mini_img"
+              />
+              <h3 class="article_title">Где выпить колдбрю в Москве</h3></a
+            >
+            <div class="article_descr">
+              Собрала для вас список любимых кофеен, где подают лучший летний
+              напиток.
+            </div>
+            <div class="article_info">
+              <div class="article_tag">Теги: город</div>
+              <div class="article_date">24.07.2020</div>
+            </div>
+          </article>
+          <!-- /.view_mini -->
+          <article class="view_mini">
+            <a href="article.html"
+              ><img
+                src="files/article_3.jpg"
+                alt="книги"
+                class="view_mini_img"
+              />
+              <h3 class="article_title">Прочитано: книжные рекомендации</h3></a
+            >
+            <div class="article_descr">
+              Рассказываю о прочитанных за последнее время книгах: фавориты и
+              провалы.
+            </div>
+            <div class="article_info">
+              <div class="article_tag">Теги: книги</div>
+              <div class="article_date">15.07.2020</div>
+            </div>
+          </article>
+          <!-- /.view_mini -->
+        </div>
+        <!-- /.article_grid3 -->
+        <div class="article_grid2">
+          <article class="view_big">
+            <img
+              src="files/article_4.jpg"
+              alt="фотография цветов"
+              class="view_img_big"
+            />
+            <div class="description">
+              <a href="article.html"
+                ><h3 class="article_title color">Снимки на плёнку</h3></a
+              >
+              <div class="article_descr color">
+                Поделилась с вами весенними фотографиями, и секретами удачных
+                снимков.
+              </div>
+              <div class="article_info color">
+                <div class="article_tag">Теги: путешествия</div>
+                <div class="article_date">29.09.2020</div>
+              </div>
+            </div>
+          </article>
+          <!-- /.view_mini -->
+
+          <article class="view_big">
+            <img src="files/article_5.jpg" alt="чизкейк" class="view_img_big" />
+            <div class="description">
+              <a href="article.html"
+                ><h3 class="article_title color">Домашний чизкейк</h3></a
+              >
+              <div class="article_descr color">
+                Что может быть лучше чизкейка с сезонными ягодами? Только
+                домашний чизкейк!
+              </div>
+              <div class="article_info color">
+                <div class="article_tag">Теги: рецепты</div>
+                <div class="article_date">24.06.2020</div>
+              </div>
+            </div>
+          </article>
+          <!-- /.view_mini -->
+        </div>
+        <!-- /.article_grid2 -->
+        <div class="show_more">
+          <a href="#" class="show_link">Показать еще</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.articles -->
+
+    <section class="about-me" id="about-me">
+      <div class="container">
+        <h2 class="title center">Обо мне</h2>
+        <div class="about-info">
+          <img src="files/about-me.jpg" alt="автор блога" class="about-img" />
+          <div class="about-text">
+            <p class="about-descr">
+              Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты
+              найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты,
+              обзоры на книги. В общем, тексты о том, что мне инетресно.
+              <br /><br />
+              Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+              портфолио. Ниже размещены несколько моих лучших рабочих текстов.
+              Буду рада новым сотрудничествам!
+              <br /><br />
+              Если вы хотите написать мне — это можно сделать в соцсетях или
+              через <a href="#contact">форму</a>. Всегда приятно услышать
+              обратную связь от читателей и познакомиться поближе. <br /><br />
+              Приятного чтения!
+            </p>
+            <blockquote class="about-qoute">
+              Я верю, что каждый раз пробуя новое, выходящее за зону моего
+              комфорта, я действительно узнаю настояющую себя.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.about-me -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="title center">Портфолио</h2>
+        <div class="portfolio-items">
+          <div class="item">
+            <img src="files/portfolio_1.jpg" alt="фон" class="portfolio_img" />
+            <div class="portfolio_info">
+              <h3 class="portfolio_name">Блог HTML Academy</h3>
+              <h4 class="portfolio_title">«Как учиться продуктивно»</h4>
+              <div class="portfolio_descr">
+                Про основные методы обучения, которые помогут быстро и надолго
+                запомнить информацию.
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+
+          <div class="item">
+            <img src="files/portfolio_2.jpg" alt="фон" class="portfolio_img" />
+            <div class="portfolio_info">
+              <h3 class="portfolio_name color">Журнал «LNK»</h3>
+              <h4 class="portfolio_title color">
+                «Зачем поцели нужны человеку? И какие они бывают»
+              </h4>
+              <div class="portfolio_descr color">
+                Поцелуи — повсеместная ежедневная практика. Но зачем люди
+                целуются? Какие смысли вкладывают в этот ритуал? И где корни
+                этой практики?
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+
+          <div class="item">
+            <img src="files/portfolio_3.jpg" alt="фон" class="portfolio_img" />
+            <div class="portfolio_info">
+              <h3 class="portfolio_name">Журнал «Т — Л»</h3>
+              <h4 class="portfolio_title">
+                «Советы по эффективной удалённой работе»
+              </h4>
+              <div class="portfolio_descr">
+                Поделилась лайфхаками, которые помогают мне работать продуктивно
+                из дома.
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+        </div>
+        <!-- all items -->
+        <div class="show_more">
+          <a href="#" class="show_link">Показать еще</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.portfolio -->
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="title center">Написать мне</h2>
+        <form action="#" method="POST" class="contact-form">
+          <div class="half-width">
+            <label for="name">Ваше имя</label>
+            <input type="text" name="name" placeholder="Иван Иванов" required />
+          </div>
+          <div class="half-width">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="google@gmail.com"
+              required
+            />
+          </div>
+
+          <label for="review">Текст отзыва</label>
+          <textarea
+            name="review"
+            id=""
+            rows="10"
+            minlength="10"
+            maxlength="200"
+            placeholder="Напишите здесь ваше сообщение."
+            class="text-message comment-area"
+          ></textarea>
+          <input type="submit" value="Отправить" class="input-submit-index" />
+        </form>
+      </div>
+    </section>
+    <!-- /.contact-me -->
+
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">ВК</a>
+        <a href="#">Телеграм</a>
+        <a href="#">Инстаграм</a>
+        <a href="#">Твиттер</a>
+      </div>
+    </footer>
+
+    <script src="js/length-com-index.js"></script>
+  </body>
+</html>
