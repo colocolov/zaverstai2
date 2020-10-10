@@ -83,6 +83,11 @@ body {
 .view_mini_img {
   border-radius: 10px;
 }
+.view_mini_img:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s;
+}
 .article_title {
   margin-top: 27px;
   font-family: "Spectral SC Bold";
@@ -118,6 +123,11 @@ body {
   overflow: hidden;
   width: 590px;
   height: 552px;
+}
+.view_big:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s;
 }
 .view_img_big {
   position: absolute;
@@ -162,6 +172,7 @@ body {
   border: 1px solid #d7d1c9;
   background: #d7d1c9;
   transition: all 0.25s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .hidden {
   display: none;
@@ -243,7 +254,10 @@ body {
   overflow: hidden;
   border-radius: 10px;
 }
-
+.item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s;
+}
 .portfolio_img {
   position: absolute;
   z-index: -1;
