@@ -158,6 +158,14 @@ body {
   font-size: 16px;
   color: #202117;
 }
+.show_link:hover {
+  border: 1px solid #d7d1c9;
+  background: #d7d1c9;
+  transition: all 0.25s;
+}
+.hidden {
+  display: none;
+}
 
 /* ---------- ABOUT ME ----------*/
 .about-me {
@@ -181,7 +189,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 20px;
-  margin-right: 24px;
 }
 .about-descr {
   margin-top: 44px;
@@ -194,21 +201,30 @@ body {
 .about-descr a {
   margin: 0;
   font-size: 16px;
-
   color: #2e2f22;
 }
 .about-qoute {
   font-family: "Open Sans Italic";
+  position: relative;
   margin-top: 71px;
+  margin-bottom: 25px;
   padding-left: 20px;
-  height: 214px;
-  vertical-align: middle;
   font-size: 30px;
   font-weight: 400;
   font-style: italic;
   line-height: 40px;
   color: #2e2f22;
-  border-left: 3px solid #d7d1c9;
+}
+.about-qoute:before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 214px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d7d1c9;
 }
 
 /* ---------- PORTFOLIO ----------*/
@@ -227,6 +243,7 @@ body {
   overflow: hidden;
   border-radius: 10px;
 }
+
 .portfolio_img {
   position: absolute;
   z-index: -1;

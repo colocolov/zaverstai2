@@ -6,8 +6,9 @@ commentFieldIndex.oninput = function () {
   //console.log(commentFieldIndex.value);
 
   if (
-    commentFieldIndex.value.length < 3 ||
-    commentFieldIndex.value.length > 150
+    commentFieldIndex.value.length == "" ||
+    commentFieldIndex.value.length < 10 ||
+    commentFieldIndex.value.length > 200
   ) {
     commentFormIndex.classList.add("warning");
     submitButtonIndex.disabled = true;

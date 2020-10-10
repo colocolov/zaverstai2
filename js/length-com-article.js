@@ -4,8 +4,8 @@ let submitButtonArticle = document.querySelector(".input-submit-article");
 
 commentFieldArticle.oninput = function () {
   if (
-    commentFieldArticle.value.length < 3 ||
-    commentFieldArticle.value.length > 150
+    commentFieldArticle.value.length < 10 ||
+    commentFieldArticle.value.length > 200
   ) {
     commentFormArticle.classList.add("warning");
     submitButtonArticle.disabled = true;
